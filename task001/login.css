@@ -19,7 +19,7 @@ body {
     width: 160px;
     height: 74px;
     margin: 0 auto;
-    background: url(../img/zhihu.png) no-repeat;
+    background: url(zhihu.png) no-repeat;
     background-size: contain;
 }
 
