@@ -1,0 +1,36 @@
+.container {
+    margin: auto;
+    position: absolute;
+    /*width: 300px;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+em {
+    color: red;
+}
+
+input {
+    color: #545454;
+    padding: 3px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border-radius: 2px;
+    width: 260px;
+    font-family: Arial,"Microsoft Yahei","微软雅黑","Hiragino Sans GB", sans-serif;
+    line-height: 28px;
+    border: none;
+    border: solid 1px #a7a7a7;
+    font-size: 16px;
+
+}
+
+label {
+    width: 4em;
+    text-align: right;
+    display: inline-block;
+    font-family: Arial,"Microsoft Yahei","微软雅黑","Hiragino Sans GB", sans-serif;
+}
+
+
