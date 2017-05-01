@@ -1,0 +1,131 @@
+ul {
+    list-style: none;
+}
+
+.nav>li {
+    float: left;
+}
+
+ul a{
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    background-color: #2f3e45;
+}
+
+.nav>li:first-child a{
+    border-radius: 10px 0 0 10px;
+}
+
+.nav>li:last-child a{
+    border-radius: 0 10px 10px 0;
+}
+
+.drop-down ul {
+    padding: 0;
+}
+/*第一种方法*/
+/*.drop-down-content {
+    display: none;
+    padding: 0;
+    position: absolute;
+}
+
+.drop-down {
+    position: relative;
+}
+h3 {
+    font-size: 30px;
+    clear: both;
+}
+
+.drop-down-content li:hover a{
+    background-color: red;
+}
+
+.drop-down:hover .drop-down-content {
+    display: block;
+}*/
+
+/*第二种方法*/
+/*.drop-down {
+    height: 50px;
+    overflow: hidden;
+}
+
+.drop-down-content {
+    padding: 0;
+}
+
+h3 {
+    font-size: 30px;
+    clear: both;
+    position: relative;
+    z-index: -1;
+}
+
+.drop-down-content li:hover a {
+    background-color: red;
+}
+
+.drop-down:hover {
+    overflow: visible;
+}
+*/
+/*第三种方法,这一种方法效果不是很好因为当鼠标没有放在下拉菜单而是放在他的下方时，下拉菜单也会显示*/
+/*.drop-down {
+    height: 50px;
+}
+
+.drop-down-content {
+    padding: 0;
+    opacity: 0;
+}
+
+h3 {
+    font-size: 30px;
+    clear: both;
+    position: relative;
+    z-index: -1;
+}
+
+.drop-down-content li:hover a {
+    background-color: red;
+}
+
+.nav .drop-down:hover .drop-down-content {
+    opacity: 1;
+}
+*/
+/*第四种方法,有过渡效果*/
+.drop-down {
+    height: 50px;
+}
+
+.drop-down-content {
+    padding: 0;
+    opacity: .3;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+h3 {
+    font-size: 30px;
+    clear: both;
+    position: relative;
+    z-index: -1;
+}
+
+.drop-down-content li:hover a {
+    background-color: red;
+}
+
+.drop-down:hover .drop-down-content {
+    opacity: 1;
+    height: 150px;
+}
