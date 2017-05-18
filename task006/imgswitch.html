@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="imgswitch.css">
+</head>
+<body>
+    <div id="bk">
+        <img src="bw_0.png" id="pic" class="img1">
+        <div id="btn">
+            <button id="xx" class="gray">小新</button>
+            <button id="bw" class="blue">巴卫</button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var bw = document.getElementById("bw");
+        var xx = document.getElementById("xx");
+        var bk = document.getElementsByTagName("body");
+        var pic = document.getElementById("pic");
+
+        bw.onclick = function() {
+            bk[0].style.backgroundImage = 'url(bw-bg.png)';
+            pic.setAttribute('src', 'bw_0.png');
+            pic.setAttribute('class', 'img1');
+            xx.setAttribute('class', 'gray');
+            bw.setAttribute('class', 'blue');
+        }
+
+        xx.onclick = function() {
+            bk[0].style.backgroundImage = 'url(xx-bg.png)';
+            pic.setAttribute('src', 'xx.png');
+            xx.setAttribute('class', 'blue');
+            bw.setAttribute('class', 'gray');
+            pic.setAttribute('class', 'img2');
+        }
+    </script>
+</body>
+</html>
